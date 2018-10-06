@@ -12,9 +12,11 @@ and an output PWM_OUT.
 Duty Cycle:
 
 -The duty cycle is controlled through timer compare value. The width of the PWM_OUT signal is equal to the timer count clock cycles.
+
 Example,
 
 TIMx_CNT = 1000; // Timer count and the width of the PWM_OUT pulse.
+
 TIMx_CMPR = 500;
 
 Duty cycle = TIMx_CMPR/TIMx_CNT * 100.
